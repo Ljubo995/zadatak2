@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Red Hat Display',sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main{
+    display: grid;
+    padding-top: 70px;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+}
+.logo-place{
+    padding-top: 50px;
+    text-align: center;
+}
+.title{
+    text-align: center;
+}
+.info-text{
+    opacity: 50%;
+}
+.head-text{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 80px;
+    padding-bottom: 20px;
+}
+.faces-left{
+    display: grid;
+    grid-gap: 25px;
+    justify-content: left;
+    grid-area: faces-left;
+}
+.faces-right{
+    display: grid;
+    grid-gap: 25px;
+    justify-content: right;
+    grid-area: faces-right;
+}
+.user{
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.middle-part{
+    display: grid;
+    justify-content: center;
+    grid-area: middle-part;
+} 
+.head{
+    display: grid;
+    grid-template-areas: 'faces-left middle-part faces-right';
+}
+.buttons{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.download{
+    position: relative;
+    right: 15px;
+}
+.element-01-place{
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#sphoto{
+    position: relative;
+    top: 50px;
+}
+
+#mphoto{
+    position: relative;
+    top: 50px;
+}
+
+.pictures-in-row{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4 ,25%);
+}
+.row-picture{
+    display: grid;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.second-title{
+    padding-top: 20px;
+    letter-spacing: 3px;
+    color: lightblue;
+    font-size: 18px;
+    text-align: center;
+    
+}
+.large-title{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: normal;
+    text-align: center;
+}
+.second-info{
+    text-align: center;
+    opacity: 50%;
+}
+.element-02-place{
+ position: relative;
+ top: 35px;
+ text-align: center;
+}
+footer{
+    background-image: linear-gradient(rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8) ), url(zadatak-2/starter-code/assets/desktop/image-footer.jpg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 100px 0px;  
+}
+.title-3{
+    font-weight: 900;
+    color: white;
+    font-size: 45px;
+    line-height: normal;
+    text-align: center;
+    width: 100%;
+}
+.last-info{
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.footer-button{
+    text-align: center;
+    width: 100%;
+}
+@media (max-width:1308px) {
+    .head{
+        display: grid;
+        grid-template-areas: 'faces-left faces-right'
+                             'middle-part middle-part';
+        justify-content:center ;
+        grid-gap: 30px;
+    }
+    .middle-part{
+        padding-top: 60px;
+    }
+    .row-picture{
+        transform: scale(0.9);
+    }
+    footer{
+        padding: 0px;
+        background-image: linear-gradient(rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8) ), url(zadatak-2/starter-code/assets/tablet/image-footer.jpg);
+        background-size: cover;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+    .title-3{
+        padding: 25px 0px;
+    }
+    .last-info{
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width:828px){
+    .buttons{
+        margin: 10px;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    .what-it-is{
+        padding-top: 25px;
+    }
+    footer{
+        padding: 0px;
+        background-image: linear-gradient(rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8) ), url(zadatak-2/starter-code/assets/mobile/image-footer.jpg);
+        background-size: cover;
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+    .pictures-in-row{
+        display: grid;
+        grid-template-rows: repeat(2, 50%);
+        grid-template-columns: repeat(2, 50%); 
+        justify-content: center;
+        text-align: center;
+    }
+    .rwp-1{
+        margin-right: 10px;
+   }
+    .rwp-2{
+        margin-left: 10px;
+}
+
+       body{
+           display: inline-block;
+       }
+    .head{
+        display: grid;
+        grid-template-areas: 'faces-left faces-right'
+                             'middle-part middle-part';
+        justify-content:center ;
+    }
+ 
+    .faces-left{
+        align-items: center;
+        display: grid;
+        
+    }
+    .group-1{
+        display:grid;
+        grid-template-columns: repeat(3,33%);   
+    }
+
+    .group-2{
+        display:grid;
+        grid-template-columns: repeat(3,33%);   
+    }
+    .faces-right{
+        align-items: center;
+        
+    }
+    .group-3{
+        display:grid;
+        grid-template-columns: repeat(3,33%);         
+    }
+
+    .group-4{
+        display:grid;
+        grid-template-columns: repeat(3,33%);   
+    }
+
+}
+    
